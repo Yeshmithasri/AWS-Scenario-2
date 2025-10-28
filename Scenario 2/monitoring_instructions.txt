@@ -1,0 +1,10 @@
+Monitoring Setup Instructions:
+
+1. Enable CloudWatch detailed monitoring for EC2 and RDS.
+2. Install Grafana on EC2:
+   sudo apt-get update && sudo apt-get install -y grafana
+   sudo systemctl start grafana-server && sudo systemctl enable grafana-server
+3. Configure Grafana data source → CloudWatch → Region: eu-north-1.
+4. Create dashboards for EC2, RDS, and S3 metrics.
+5. Add custom AI model metrics to CloudWatch:
+   aws cloudwatch put-metric-data --namespace "SMV/AIModel" --metric-name "ModelAccuracy" --value 0.91
