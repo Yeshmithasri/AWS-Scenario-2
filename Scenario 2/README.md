@@ -11,4 +11,3 @@ This project demonstrates setting up a secure AWS-based system integrating:
 3. Model Training & Prediction
 4. Monitoring Dashboard
 
-GitHub Repository: https://github.com/Kavya19112004/AWS-SCENARIO-2
